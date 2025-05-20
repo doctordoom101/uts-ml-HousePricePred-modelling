@@ -62,6 +62,8 @@ Dataset berisi berbagai fitur terkait properti perumahan di California, seperti:
 
 ## ✅ Hasil & Kesimpulan
 
+![alt text](images/download.png)
+
 * **Model regresi Random Forest** menunjukkan performa **terbaik** dibanding Linear Regression, karena kemampuannya menangkap hubungan non-linear dan interaksi antar fitur.
 * **Transformasi logaritma** sangat membantu dalam memperbaiki distribusi dan meningkatkan stabilitas model.
 * **Feature engineering** sederhana (rasio kamar tidur dan rumah tangga) berkontribusi dalam meningkatkan korelasi terhadap harga rumah.
