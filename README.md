@@ -62,9 +62,8 @@ Dataset berisi berbagai fitur terkait properti perumahan di California, seperti:
 
 ## ✅ Hasil & Kesimpulan
 
-![alt text](images/download.png)
+![alt text](images/evaluation.png)
 
-* **Model regresi Random Forest** menunjukkan performa **terbaik** dibanding Linear Regression, karena kemampuannya menangkap hubungan non-linear dan interaksi antar fitur.
+* **Model regresi LGBM** menunjukkan performa **terbaik** dibanding dari antara semua model, karena kemampuannya menangkap hubungan non-linear dan interaksi antar fitur.
 * **Transformasi logaritma** sangat membantu dalam memperbaiki distribusi dan meningkatkan stabilitas model.
 * **Feature engineering** sederhana (rasio kamar tidur dan total ruangan) berkontribusi dalam meningkatkan korelasi terhadap harga rumah.
-* **SVM dan PCA** berhasil mendemonstrasikan kemampuan klasifikasi lokasi berdasarkan kedekatannya dengan laut, meskipun ini merupakan task berbeda dari prediksi harga.
