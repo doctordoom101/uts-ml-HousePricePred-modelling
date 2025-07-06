@@ -8,9 +8,14 @@ Kami menerapkan alur standar Machine Learning, mulai dari _EDA, Preprocessing, F
 
 ---
 
-## 🔍 Deskripsi Dataset
+## 🔍 Konteks Dataset
 
-Dataset berisi berbagai fitur terkait properti perumahan di California, seperti:
+Dataset ini berasal dari sensus California tahun 1990 dan digunakan pada bab kedua buku Hands-On Machine Learning with Scikit-Learn and TensorFlow karya Aurélien Géron.
+
+Dataset ini merupakan versi modifikasi dari kumpulan data Perumahan California yang tersedia di:
+Halaman Luís Torgo (University of Porto) -> https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html
+
+Variabel yang terdapat dalam dataset ini mencakup:
 
 * Jumlah kamar tidur dan total kamar
 * Populasi dan jumlah rumah tangga
@@ -42,21 +47,17 @@ Dataset berisi berbagai fitur terkait properti perumahan di California, seperti:
 
 ### 3. **Modeling**
 
-#### a. Linear Regression
+Beberapa algoritma digunakan untuk membandingkan performa prediksi nilai median rumah:
 
-* Dilatih pada data hasil preprocessing
-* Dievaluasi dengan nilai **R-squared** di data training dan testing
+* Linear Regression
+* Random Forest
+* Support Vector Regressor (SVR)
+* K-Nearest Neighbors (KNN)
+* LightGBM (LGBM)
+* CatBoost
+* XGBoost
 
-#### b. Random Forest Regressor
-
-* Model non-linear berbasis ensemble
-* Memberikan performa lebih tinggi dibanding linear regression dalam dataset ini
-
-#### c. PCA & SVM (untuk klasifikasi)
-
-* PCA dilakukan untuk reduksi dimensi data (menjadi 2 komponen)
-* SVM digunakan untuk mengklasifikasikan kategori `ocean_proximity`
-* Akurasi dan metrik evaluasi (precision, recall, f1-score) dihitung
+Model dilatih menggunakan data latih dan dievaluasi menggunakan data uji dengan metrik R-Squared (R²).
 
 ---
 
